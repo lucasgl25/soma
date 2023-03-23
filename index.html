@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma / DGM</title>
+</head>
+
+<body>
+
+    <h1>Soma usando DGM</h1>
+
+
+    <input type= "number" name= "valor1" id = "valor1"> +
+    <input type= "number" name= "valor2" id = "valor2">
+    <input type= "button" value= "Somar"  onclick="somar()">
+
+    
+
+    <div id="resp"> Resposta </div>
+
+   
+
+
+    <script>
+
+        function somar(){
+            var v1 = window.document.getElementById('valor1');
+            var v2 = window.document.querySelector('input#valor2');
+            var resp = window.document.getElementById('resp');
+
+            var n1 = Number(v1.value);
+            var n2 = Number(v2.value)
+            var resultado = n1 + n2;
+
+
+            resp.innerHTML = `A SOMA ENTRE ${n1} E ${n2} É IGUAL A ${resultado}`
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>
